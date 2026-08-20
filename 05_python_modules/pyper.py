@@ -1,0 +1,31 @@
+import pyperclip
+
+# pyperclip.paste()
+# pyperclip.copy("Hello")
+# print(pyperclip.paste())
+
+# f = open("/etc/passwd")
+# print(f.read(4))
+# print(f.read(4))
+# print(f.seek(0))
+# print(f.read(8))
+# print(f.read(4))
+# print(f.read())
+# f.seek(0)
+# print(f.readline())
+# print(f.readline())
+# print(f.tell())
+# f.seek(0)
+# print(f.tell())
+# print(f.readline())
+# print(f.tell())
+# f.close()
+# exit()
+
+with open("fichier", "r+", encoding="utf-8") as f:
+    print(f.write("someting"))
+    print(f.read(4))
+    print(f.write("quelquechose\n"))
+    print(f.write("cc_c'est_moi"))
+    f.seek(0)
+    print(f.read())
